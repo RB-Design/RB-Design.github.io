@@ -1,0 +1,14 @@
+User-agent: * 
+Disallow: /portfolio/adamBishop/
+Disallow: /portfolio/Criton/
+Disallow: /portfolio/CritonApp/
+Disallow: /portfolio/Finsure/
+Disallow: /portfolio/PCAP/
+Disallow: /portfolio/Phoenix/
+Disallow: /portfolio/Reach/
+Disallow: /portfolio/schuh/
+Disallow: /portfolio/willowbank/
+Disallow: /testimonials/janet/
+Disallow: /testimonials/peter/
+Disallow: /testimonials/sylvie/
+Sitemap: https://richb-design.co.uk/sitemap.xml

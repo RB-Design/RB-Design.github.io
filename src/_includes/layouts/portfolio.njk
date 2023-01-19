@@ -1,0 +1,34 @@
+{% extends "global.njk" %} {% block portfolio %}
+
+<main>
+	<div class="text-block">
+		<section id="portfolio">
+			{% for portfolio in collections.portfolio %}
+			<article
+				class="work_example"
+				data-aos="fade-up"
+				aos-data-duration="500"
+				data-aos-easing="ease-out-back"
+			>
+				<picture
+					class="portPic"
+					style="background-image: url(' {{ portfolio.data.screenshot }} ');"
+					alt="{{ portfolio.data.screenshotAlt }}"
+				>
+				</picture>
+				<div class="portText">
+					<h3>{{ portfolio.data.pageTitle }}</h3>
+					<h4 style="margin: 0.5rem 0">{{ portfolio.data.description }}</h4>
+
+					<p>{{ portfolio.data.details }}<br /></p>
+					<a href="{{ portfolio.data.link }}" target="_blank" rel="noopener">{{
+						portfolio.data.linkText
+					}}</a>
+				</div>
+			</article>
+
+			{% endfor %}
+		</section>
+	</div>
+</main>
+{% endblock portfolio %}

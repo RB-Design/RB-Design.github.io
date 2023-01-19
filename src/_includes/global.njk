@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include 'partials/head.html' %}
+	<body>
+		{% include 'partials/HeaderWave.html' %}
+
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-WT5FT59"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		{% include 'partials/header.html' %}
+		<!--- END TOP OF TEMPLATE --->
+
+		{% block content %}
+		{{ content | safe }}
+		{% endblock content %} {% block portfolio %}{% endblock portfolio %}
+
+		<!--- START BOTTOM OF TEMPLATE --->
+		{% include 'partials/footer.html' %}
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>

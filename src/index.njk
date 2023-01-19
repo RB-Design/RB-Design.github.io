@@ -1,0 +1,85 @@
+---
+layout: "global.njk"
+metaname: "RB Design: digital excellence across bespoke web design, brand strategy & digital consultancy. Originally from Leeds, based in Edinburgh, serving the world!"
+title: "Welcome to Rich B Design : custom web design & development, brand strategy and digital consultancy"
+pageTitle: "Hello, I’m Richard. How do you do?"
+introParagraph: "In an increasingly competitive online world, it’s important that your website is working as hard as it can for you. However, the internet can be a pretty confusing place, right? Don’t worry; I’ve got you covered."
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+{% block content %}
+
+<main>
+	<div>
+		<div class="home-p text-block">
+			<p>
+				Web design, branding, content management, development: It's all a bit of
+				a mystery, eh? Maybe you’re starting from scratch and don’t even have a
+				logo, or perhaps you’ve been online for a while, but your website is
+				starting to look a bit tired or it’s been built with technology that’s
+				rapidly going out of date? Whatever stage you’re at in getting your
+				business online, as a full-service designer / developer I can help you
+				get the most out of your website.
+			</p>
+		</div>
+
+		<section class="dark_home">
+			{% for service in collections.services %}
+			<article
+				class="homepageService"
+				data-aos="fade-up"
+				aos-data-duration="500"
+				data-aos-easing="ease-out-back"
+			>
+				<img src="{{ service.data.icon }}" alt="{{ service.data.iconAlt }}" />
+				<section>
+					<h3>{{ service.data.pageTitle }}</h3>
+					<p>
+						{{ service.data.excerpt }}
+					</p>
+					<a href="{{ service.url }}">Find out More</a>
+				</section>
+			</article>
+			{% endfor %}
+		</section>
+		<section class="light_home">
+			{% for service in collections.services2 %}
+			<article
+				class="homepageService"
+				data-aos="fade-up"
+				aos-data-duration="500"
+				data-aos-easing="ease-out-back"
+			>
+				<img src="{{ service.data.icon }}" alt="{{ service.data.iconAlt }}" />
+				<section class="home-service-text">
+					<h3>{{ service.data.pageTitle }}</h3>
+					<p>
+						{{ service.data.excerpt }}
+					</p>
+					<a href="{{ service.url }}">Find out More</a>
+				</section>
+			</article>
+			{% endfor %}
+		</section>
+
+		<div class="home-p text-block">
+			<p>
+				Originating from God's Own Country (aka: Yorkshire) and now operating
+				from a secret bunker in the tropical paradise of Livingston, West
+				Lothian, I'm here to offer you a comprehensive custom brand identity and
+				web design service backed by over a decade of proven industry
+				experience.
+			</p>
+			<p>
+				No industry jargon. No incomprehensible insider knowledge. No befuddling
+				decision-making. Just classic design principles and a clear, simple
+				approach to give you what you need, all delivered with a big friendly
+				Yorkshire attitude.
+			</p>
+		</div>
+	</div>
+</main>
+
+{% endblock content %}

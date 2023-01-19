@@ -1,0 +1,18 @@
+{% extends "global.njk" %} {% block content %}
+<main>
+	<div style="display: flex; align-items: center; flex-direction: column">
+		<h1 data-aos="fade" aos-data-duration="500" data-aos-easing="ease-in-out">
+			{{ service }}
+		</h1>
+	</div>
+
+	<div
+		data-aos="fade-up"
+		aos-data-duration="3500"
+		data-aos-delay="500"
+		data-aos-easing="ease-out-back"
+	>
+		{{ content | safe }}
+	</div>
+</main>
+{% endblock content %}

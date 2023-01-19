@@ -1,0 +1,15 @@
+{% extends "global.njk" %} {% block content %}
+
+<main>
+	<section class="text-block testimonials-container">
+		{% for entry in collections.testimonial %}
+		<article class="testimonial">
+			<h3>{{ entry.data.client }}</h3>
+			<h4>{{ entry.data.role }}</h4>
+			{{ entry.templateContent | safe }}
+		</article>
+
+		{% endfor %}
+	</section>
+</main>
+{% endblock content %}

@@ -1,0 +1,26 @@
+{
+  "name": "richb-11ty",
+  "version": "1.0.0",
+  "description": "Rebuilding site with 11ty",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RB-Design/richb-11ty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RB-Design/richb-11ty/issues"
+  },
+  "homepage": "https://github.com/RB-Design/richb-11ty#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "aos": "^2.3.4",
+    "node-sass": "^5.0.0"
+  }
+}
